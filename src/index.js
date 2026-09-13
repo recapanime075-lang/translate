@@ -45,7 +45,7 @@ async function handleTranslate(request, env) {
     `Return ONLY the translated text, with no explanation, no quotes, and no extra commentary.\n\n` +
     `Text:\n${text}`;
 
-  const model = 'gemini-2.0-flash';
+  const model = 'gemini-3.6-flash';
   const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
 
   try {
